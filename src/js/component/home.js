@@ -1,22 +1,25 @@
-import React from 'react';
-import { Songs } from './temas'
+import { useEffect, useRef, useState } from 'react';
+import { Player } from './player';
+import { Songs } from './temas';
 
-export function Home () {
-    <Songs />
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-10 d-flex">
-                  Mario-Castle
-                </div>
-                <div className="col-md-10 d-flex">
-                  Mario-starman
-                </div>
-                <div className="col-md-10 d-flex">
-                  Mario-Overworld
-                </div>
+function Home() {
+    const [songs, setSongs] = useState([]);
+    const [Playing, setPlaying] = useState(false);
+    const [On, setOn] = useState(0);
 
-            </div>
-        </div>
-    )
+    let songPlayer = useRef(null);
+
+    let getFetch = () =>{
+        fetch("https://assets.breatheco.de/apis/sound/songs").then((result)=>{
+            return result.json();
+        }).then((data)=>{
+            setSongs((prevState)=>{
+                return data;
+            })
+        }).catch((error)=>{
+            console.error(error);
+        });
+    }
+
+    
 }
