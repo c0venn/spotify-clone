@@ -1,23 +1,16 @@
-import React from "react";
-import castle from "./castle";
-import hurry from "./hurry";
-import overworld from "./overworld";
+import React from 'react';
+import { Songs } from './temas'
 
-export function Home() {
-	return (
-		<div className="api-spotify">
-			<p>Hello World</p>
-			<ul>
-				<li>
-					<Castle />
-				</li>
-				<li>
-					<Hurry />
-				</li>
-				<li>
-					<Overworld />
-				</li>
-			</ul>
-		</div>
-	);
+export function Home () {
+    <Songs />
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-md-10 d-flex">
+                  Mario-Castle
+                </div>
+
+            </div>
+        </div>
+    )
 }
