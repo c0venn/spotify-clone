@@ -4,7 +4,7 @@ export const Songs = [{
 		},
 		{
 			src:"https://assets.breatheco.de/apis/sound/files/mario/songs/hurry-starman.mp3",
-			name: "Mario Star"
+			name: "starman"
 		},
 		{
 			src:"https://assets.breatheco.de/apis/sound/files/mario/songs/overworld.mp3",

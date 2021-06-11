@@ -9,6 +9,12 @@ export function Home () {
                 <div className="col-md-10 d-flex">
                   Mario-Castle
                 </div>
+                <div className="col-md-10 d-flex">
+                  Mario-starman
+                </div>
+                <div className="col-md-10 d-flex">
+                  Mario-Overworld
+                </div>
 
             </div>
         </div>
