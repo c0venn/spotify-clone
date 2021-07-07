@@ -1,1 +1,43 @@
 @import "~bootstrap/scss/bootstrap.scss";
+
+.app {
+    display: flex;
+    flex-direction: column;
+    background-color: #151516
+}
+  
+body {
+    background-color: #151516;
+    overflow-x: hidden;
+}
+  
+.songlist {
+    margin-bottom: 70px;
+}
+  
+.icon {
+    color: white;
+    margin: 15px;
+    font-size: 30px;
+}
+  
+.button {
+    background-color: transparent;
+    border: none;
+  
+.button:active {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+}
+  
+.player {
+    position: fixed;
+    height: 70px;
+    margin: 10px 0px;
+    bottom: -10px;
+    background-color: #151516;
+    border-top: white 1px solid;
+    width: 100%;
+    display: flex;
+}
